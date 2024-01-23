@@ -15,3 +15,6 @@
 강의: 
 [모든 개발자를 위한 HTTP 웹 기본 지식](https://inf.run/8ZEU8)
 
+## SpringBoot+JPA1
+강의: 
+[실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발](https://inf.run/hhEvV)
