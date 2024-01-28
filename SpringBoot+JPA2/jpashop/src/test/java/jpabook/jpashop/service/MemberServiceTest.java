@@ -18,7 +18,8 @@ import static org.junit.Assert.fail;
 public class MemberServiceTest {
 
     @Autowired MemberService memberService;
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepository memberRepository;
 
     @Test
     public void 회원가입() throws Exception {
@@ -30,7 +31,7 @@ public class MemberServiceTest {
         Long saveId = memberService.join(member);
 
         //then
-        assertEquals(member, memberRepository.findOne(saveId));
+        assertEquals(member, memberRepository.findById(saveId).get());
     }
 
     @Test(expected = IllegalStateException.class)
